@@ -44,7 +44,7 @@ export type SendCallsSyncErrorType = SendCallsErrorType
  * @example
  * import { createWalletClient, custom } from 'viem'
  * import { mainnet } from 'viem/chains'
- * import { sendCalls } from 'viem/actions'
+ * import { sendCallsSync } from 'viem/actions'
  *
  * const client = createWalletClient({
  *   chain: mainnet,

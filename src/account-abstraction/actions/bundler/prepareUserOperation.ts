@@ -299,10 +299,9 @@ export type PrepareUserOperationErrorType =
  * @returns The User Operation. {@link PrepareUserOperationReturnType}
  *
  * @example
- * import { createBundlerClient, http } from 'viem'
- * import { toSmartAccount } from 'viem/accounts'
+ * import { http } from 'viem'
+ * import { createBundlerClient, prepareUserOperation, toSmartAccount } from 'viem/account-abstraction'
  * import { mainnet } from 'viem/chains'
- * import { prepareUserOperation } from 'viem/actions'
  *
  * const account = await toSmartAccount({ ... })
  *

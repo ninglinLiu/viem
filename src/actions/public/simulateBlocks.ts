@@ -148,7 +148,7 @@ export type SimulateBlocksErrorType =
  * @example
  * ```ts
  * import { createClient, http, parseEther } from 'viem'
- * import { simulate } from 'viem/actions'
+ * import { simulateBlocks } from 'viem/actions'
  * import { mainnet } from 'viem/chains'
  *
  * const client = createClient({
@@ -156,7 +156,7 @@ export type SimulateBlocksErrorType =
  *   transport: http(),
  * })
  *
- * const result = await simulate(client, {
+ * const result = await simulateBlocks(client, {
  *   blocks: [{
  *     blockOverrides: {
  *       number: 69420n,

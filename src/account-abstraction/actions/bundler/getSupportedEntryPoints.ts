@@ -17,9 +17,9 @@ export type GetSupportedEntryPointsErrorType = RequestErrorType | ErrorType
  * @returns Supported Entry Points. {@link GetSupportedEntryPointsReturnType}
  *
  * @example
- * import { createBundlerClient, http, parseEther } from 'viem'
+ * import { http, parseEther } from 'viem'
+ * import { createBundlerClient, getSupportedEntryPoints } from 'viem/account-abstraction'
  * import { mainnet } from 'viem/chains'
- * import { getSupportedEntryPoints } from 'viem/actions'
  *
  * const bundlerClient = createBundlerClient({
  *   chain: mainnet,

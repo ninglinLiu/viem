@@ -98,10 +98,9 @@ export type SendUserOperationErrorType =
  * @returns The User Operation hash. {@link SendUserOperationReturnType}
  *
  * @example
- * import { createBundlerClient, http, parseEther } from 'viem'
+ * import { http, parseEther } from 'viem'
+ * import { createBundlerClient, sendUserOperation, toSmartAccount } from 'viem/account-abstraction'
  * import { mainnet } from 'viem/chains'
- * import { toSmartAccount } from 'viem/accounts'
- * import { sendUserOperation } from 'viem/actions'
  *
  * const account = await toSmartAccount({ ... })
  *

@@ -55,9 +55,9 @@ export type BundlerActions<
    * @returns The gas estimate (in wei). {@link EstimateUserOperationGasReturnType}
    *
    * @example
-   * import { createBundlerClient, http, parseEther } from 'viem'
+   * import { http, parseEther } from 'viem'
+   * import { createBundlerClient, toSmartAccount } from 'viem/account-abstraction'
    * import { mainnet } from 'viem/chains'
-   * import { toSmartAccount } from 'viem/accounts'
    *
    * const account = await toSmartAccount({ ... })
    *
@@ -91,9 +91,10 @@ export type BundlerActions<
    *
    * @example
    * import { http } from 'viem'
-   * import { createBundlerClient, mainnet } from 'viem/chains'
+   * import { createBundlerClient } from 'viem/account-abstraction'
+   * import { mainnet } from 'viem/chains'
    *
-   * const client = createPublicClient({
+   * const client = createBundlerClient({
    *   chain: mainnet,
    *   transport: http(),
    * })
@@ -111,7 +112,8 @@ export type BundlerActions<
    * @returns Supported Entry Points. {@link GetSupportedEntryPointsReturnType}
    *
    * @example
-   * import { createBundlerClient, http, parseEther } from 'viem'
+   * import { http, parseEther } from 'viem'
+   * import { createBundlerClient } from 'viem/account-abstraction'
    * import { mainnet } from 'viem/chains'
    *
    * const bundlerClient = createBundlerClient({
@@ -132,7 +134,8 @@ export type BundlerActions<
    * @returns The receipt. {@link GetUserOperationReturnType}
    *
    * @example
-   * import { createBundlerClient, http } from 'viem'
+   * import { http } from 'viem'
+   * import { createBundlerClient } from 'viem/account-abstraction'
    * import { mainnet } from 'viem/chains'
    *
    * const client = createBundlerClient({
@@ -157,7 +160,8 @@ export type BundlerActions<
    * @returns The receipt. {@link GetUserOperationReceiptReturnType}
    *
    * @example
-   * import { createBundlerClient, http } from 'viem'
+   * import { http } from 'viem'
+   * import { createBundlerClient } from 'viem/account-abstraction'
    * import { mainnet } from 'viem/chains'
    *
    * const client = createBundlerClient({
@@ -181,9 +185,9 @@ export type BundlerActions<
    * @returns The User Operation. {@link PrepareUserOperationReturnType}
    *
    * @example
-   * import { createBundlerClient, http } from 'viem'
+   * import { http } from 'viem'
+   * import { createBundlerClient, toSmartAccount } from 'viem/account-abstraction'
    * import { mainnet } from 'viem/chains'
-   * import { toSmartAccount } from 'viem/accounts'
    *
    * const account = await toSmartAccount({ ... })
    *
@@ -225,9 +229,9 @@ export type BundlerActions<
    * @returns The User Operation hash. {@link SendUserOperationReturnType}
    *
    * @example
-   * import { createBundlerClient, http, parseEther } from 'viem'
+   * import { http, parseEther } from 'viem'
+   * import { createBundlerClient, toSmartAccount } from 'viem/account-abstraction'
    * import { mainnet } from 'viem/chains'
-   * import { toSmartAccount } from 'viem/accounts'
    *
    * const account = toSmartAccount({ ... })
    *
@@ -257,7 +261,8 @@ export type BundlerActions<
    * @returns The receipt. {@link WaitForUserOperationReceiptReturnType}
    *
    * @example
-   * import { createBundlerClient, http } from 'viem'
+   * import { http } from 'viem'
+   * import { createBundlerClient } from 'viem/account-abstraction'
    * import { mainnet } from 'viem/chains'
    *
    * const client = createBundlerClient({

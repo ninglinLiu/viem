@@ -33,9 +33,9 @@ export type GetUserOperationReceiptErrorType =
  * @returns The receipt. {@link GetUserOperationReceiptReturnType}
  *
  * @example
- * import { createBundlerClient, http } from 'viem'
+ * import { http } from 'viem'
+ * import { createBundlerClient, getUserOperationReceipt } from 'viem/account-abstraction'
  * import { mainnet } from 'viem/chains'
- * import { getUserOperationReceipt } from 'viem/actions
  *
  * const client = createBundlerClient({
  *   chain: mainnet,

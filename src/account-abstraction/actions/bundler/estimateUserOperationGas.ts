@@ -127,10 +127,9 @@ export type EstimateUserOperationGasErrorType =
  * @returns The gas estimate (in wei). {@link EstimateUserOperationGasReturnType}
  *
  * @example
- * import { createBundlerClient, http, parseEther } from 'viem'
- * import { toSmartAccount } from 'viem/accounts'
+ * import { http, parseEther } from 'viem'
+ * import { createBundlerClient, estimateUserOperationGas, toSmartAccount } from 'viem/account-abstraction'
  * import { mainnet } from 'viem/chains'
- * import { estimateUserOperationGas } from 'viem/actions'
  *
  * const account = await toSmartAccount({ ... })
  *

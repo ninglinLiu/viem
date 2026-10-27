@@ -53,9 +53,9 @@ export type WaitForUserOperationReceiptErrorType =
  * @returns The receipt. {@link WaitForUserOperationReceiptReturnType}
  *
  * @example
- * import { createBundlerClient, http } from 'viem'
+ * import { http } from 'viem'
+ * import { createBundlerClient, waitForUserOperationReceipt } from 'viem/account-abstraction'
  * import { mainnet } from 'viem/chains'
- * import { waitForUserOperationReceipt } from 'viem/actions'
  *
  * const client = createBundlerClient({
  *   chain: mainnet,
