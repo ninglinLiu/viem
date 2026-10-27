@@ -1,5 +1,13 @@
 # viem
 
+## 2.57.13
+
+### Patch Changes
+
+- [#5310](https://github.com/wevm/viem/pull/5310) [`7e015cb1d72e6b54e4468d7dd60aa59a51fe8d9b`](https://github.com/wevm/viem/commit/7e015cb1d72e6b54e4468d7dd60aa59a51fe8d9b) Thanks [@BaronOdon](https://github.com/BaronOdon)! - Added Molibra chain.
+
+- [#5314](https://github.com/wevm/viem/pull/5314) [`c0d52cdcb262744a64e742e4cf891cbbde9ccdc9`](https://github.com/wevm/viem/commit/c0d52cdcb262744a64e742e4cf891cbbde9ccdc9) Thanks [@jxom](https://github.com/jxom)! - `viem/tempo`: Keyed `Relay.accounts` stored configs by chain ID so `account_getConfig` no longer serves a config stored for another chain (configs stored under the previous key are no longer read), added a `resolveConfig` option that resolves and stores configs the store does not hold, and reduced round trips by reading the commitment without a prior block number request and writing each config once.
+
 ## 2.57.12
 
 ### Patch Changes
